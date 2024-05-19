@@ -1,5 +1,16 @@
 import { motion } from "framer-motion";
 import "./services.scss";
+import {
+  title1,
+  title2,
+  title3,
+  title4,
+  card1,
+  card2,
+  card3,
+  card4,
+  cardButton,
+} from "./constants";
 
 const variants = {
   initial: {
@@ -62,61 +73,33 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>10th Boards</h2>
-          <p>
-            I completed my 10th standard from Bishop Westcott Girls' School,
-            Doranda, Ranchi, affiliated with I.C.S.E. My subject combination
-            included Science, Mathematics, and Computer Applications. I achieved
-            an aggregate percentage of 97.2% in the boards examination, securing
-            the position of first school topper. Additionally, I attained a
-            score of 100% in Computer Applications.
-          </p>
-          <button>Go</button>
+          <h2>{title1}</h2>
+          <p>{card1}</p>
+          <button>{cardButton}</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>12th Boards</h2>
-          <p>
-            I completed my 12th standard from Jawahar Vidya Mandir, Shyamali,
-            Ranchi, affiliated with C.B.S.E. My subject combination included
-            Science, Mathematics, and Computer Science. I achieved an aggregate
-            percentage of 97.2% in the boards examination, securing the position
-            of third school topper.
-          </p>
-          <button>Go</button>
+          <h2>{title2}</h2>
+          <p>{card2}</p>
+          <button>{cardButton}</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>B.Tech from NIT Jamshedpur</h2>
-          <p>
-            I appeared for the JEE Mains and JEE Advanced in 2020, and was able
-            to clear both the entrance exams. I achieved a percentile of 97.2%
-            in JEE Mains and in the same year, I got admission into the
-            Electronics and Communication Engineering branch of NIT Jamshedpur.
-            Since the beginning, I participated in various extra curricular
-            activities and also concentrated on the academics.
-          </p>
-          <button>Go</button>
+          <h2>{title3}</h2>
+          <p>{card3}</p>
+          <button>{cardButton}</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Coding, Web development and Internships</h2>
-          <p>
-            Since my second semester, I've been actively involved in competitive
-            coding on platforms like Codeforces and Codechef. Concurrently, I
-            began honing my data structures and algorithms skills on LeetCode.
-            Moreover, I ventured into web development, undertaking various
-            projects ranging from simple HTML and CSS-based ones to fully
-            functional apps using the MERN stack. As a result, I secured
-            internships offers from Atlassian, Amazon and Hashicorp.
-          </p>
-          <button>Go</button>
+          <h2>{title4}</h2>
+          <p>{card4}</p>
+          <button>{cardButton}</button>
         </motion.div>
       </motion.div>
     </motion.div>

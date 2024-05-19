@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { aboutMe, parallax1, parallax2, projects } from "./constants";
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -27,21 +28,13 @@ const Parallax = ({ type }) => {
       <motion.div style={{ y: yText }} className="parallax-text">
         {type === "services" ? (
           <>
-            <h1>About me</h1>
-            <p>
-              Hi there! I'm Nivedita Chatterjee, a recent graduate
-              from NIT Jamshedpur with honors in Electronics and Communication
-              Engineering. I'm really passionate about web development and love
-              coding on platforms like Leetcode, Codeforces, and Codechef. Last
-              summer, I had the amazing opportunity to intern as a Software
-              Engineering intern at Atlassian. Currently, I'm enjoying my role
-              as a Front-end Engineer (FEE) Intern at Amazon, where I'm learning
-              and growing every day.
-            </p>
+            <h1>{parallax1}</h1>
+            <p>{aboutMe}</p>
           </>
         ) : (
           <>
-            <h1>Projects</h1>
+            <h1>{parallax2}</h1>
+            <p>{projects}</p>
           </>
         )}
       </motion.div>
